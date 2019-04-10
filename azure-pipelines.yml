@@ -65,7 +65,7 @@ steps:
     appType: webAppLinux
     ConnectedServiceName: $(azureSubscriptionEndpoint)
     WebAppName: $(WebAppName)
-    Package: $(System.ArtifactsDirectory)/**/*.zip
+    Package: $(Build.ArtifactsDirectory)/app.zip
 
     RuntimeStack: 'PYTHON|3.6'
 
