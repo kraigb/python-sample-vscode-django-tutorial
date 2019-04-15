@@ -59,7 +59,7 @@ steps:
     pip3.6 install setuptools
     pip3.6 install -r requirements.txt
 
-    django manage.py migrate
+    python manage.py migrate
 
   displayName: 'Install Dependencies'
 
