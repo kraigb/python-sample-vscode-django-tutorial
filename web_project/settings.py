@@ -34,7 +34,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     #'localhost',
     #'127.0.0.1'
-    'django-pipelines.azurewebsites.net'  # Sample name only!
+    'djangopipelines.azurewebsites.net'  # Sample name only!
 ]
 
 # Application definition
