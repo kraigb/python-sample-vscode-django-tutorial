@@ -60,11 +60,10 @@ steps:
     pip3.6 install -r requirements.txt
 
   displayName: 'Install Dependencies'
-  workingDirectory: Application
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/Application'
+    rootFolderOrFile: '$(Build.SourcesDirectory)'
     includeRootFolder: false 
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
